@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <script src="theme.js"></script>
+</head>
+
+<body class="light">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logono.png" alt="" id="logo">
+            </div>
+            <ul class="link">
+                <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
+                <li><img src="apps.png" id="iconmenu"><a href="menu.html">menu</a></li>
+                <li> <img src="phone-plus.png" alt="" id="icophone"><a href="contact.html">contact us</a></li>
+                <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
+                <li><img src="entrance.png" alt="" id="iconlog"><a href="login.html">login</a></li>
+
+            </ul>
+            <button id="theme" class="theme"><img src="moon-stars.png" alt=""></button>
+
+        </nav>
+    </header>
+    <div class="videoscope">
+        <video autoplay class="vid" loop muted>
+            <source src="vidbakery.mp4" type="video/mp4">
+        </video>
+        <h3 id="vidtext"></h3>
+        <h1 id="vidtext2"></h1>
+        
+    </div>
+    <section class="choose-us">
+        <div class="choose-us-container">
+            <img src="chosseus1.jpg" alt="" width="200px">
+            <div class="choosetext">
+                <h2>Why Choose Us?</h2>
+                <p>we offer the finest pastries crafted with love and the best ingeredients ,fresh every day just for
+                    you.</p>
+            </div>
+            <img src="chosseus2.jpg" alt="" width="180px">
+
+        </div>
+
+    </section>
+
+
+
+<section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="🥐🌸 (1).jfif" alt="Croissant">
+            <h3>Croissant</h3>
+            <p>70EGP</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="DÓNUTS DE FERRERO ROCHER - Petit Fit by Cris (1).jfif" alt="Donut">
+            <h3>Donut</h3>
+            <p>60EGP</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Red Velvet Cinnamon Rolls.jfif" alt="Cinnamon">
+            <h3>Cinnamon</h3>
+            <p>100E</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="b695c8ab-4f77-492e-b165-079a413c6635.jfif" alt="Danish">
+            <h3>Danish</h3>
+            <p>90E</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="Biscoff Cookie Butter White Chocolate Chip Cookies - House of Nash Eats (1).jfif" alt="Cookies">
+            <h3>Cookies</h3>
+            <p>120E</p>
+            <button>Add to Cart</button>
+        </div>
+        
+      
+    </div>
+</section>
+
+
+    
+
+    <section class="offer">
+        <div>
+            <h3 class="timer" id="timer"></h3>
+            <h3>limited time offer!!</h3>
+            <p class="text-offer">Enjoy our crispy pistachio croissants with a creamy pistachio latte </p>
+            <p>only <strong>100</strong> instead of <del>200</del></p>
+            <button id="add-offer" onclick="addToCart(this,'crispy pistachio croissants + creamy pistachio latte',100)"
+                class="add"> add
+                offer</button>
+
+        </div>
+
+        <img src="offer.jpg" alt="" width="300px">
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img src="logono.png" alt="" width="200px" id="logo-footer">
+            </div>
+
+            <ul class="footer-link">
+                <h4 class="footertitle">Links</h4>
+                <a href="https://www.facebook.com/" title="Go to facebook">Facebook </a>
+                <a href="https://www.instagram.com/" title="Go to instagram">Instagram</a>
+                <a href="https://x.com/" title="Go to Twitter">Twitter</a>
+                <a href="https://web.whatsapp.com/" title="Go to whatsapp">whatsapp</a>
+            </ul>
+            <div class="footer-address">
+                <h4 class="footertitle">Our address</h4>
+                <p>Arkan Plaza, Sheikh Zayed City, 6th of October, Giza, Egypt. </p>
+                <a href="https://maps.app.goo.gl/x4TJvcGuhojgkcXAA" target="_blank" class="find-us"><button>Find
+                        us</button> </a>
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <h4 class="footertitle">contact us</h4>
+                    <li><img src="phone-plus.png" alt="" width="20px" id="icon-footer">082-123-234-345</li>
+                    <li>hotline:1773</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+    <script src="cart.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

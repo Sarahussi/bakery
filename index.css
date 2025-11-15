@@ -1,0 +1,398 @@
+:root {
+    --backg-color: rgb(246, 236, 223);
+    --nav-bgcolor: rgb(244, 231, 215);
+    --button-bg: #E8D7C2;
+    --button-text: #5C4033;
+    --nav-text: rgb(89, 15, 15);
+    --footer-titles: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--backg-color);
+}
+
+body.dark {
+    --backg-color: #1e1e1e;
+    --nav-bgcolor: #2b2b2b;
+    --button-bg: rgb(64, 58, 48, 0.9);
+    --button-text: #ffffff;
+    --nav-text: #f5f5f5;
+    --footer-titles: #E8D7C2;
+}
+
+.videoscope {
+    position: relative;
+
+}
+
+.vid {
+    width: 100%;
+    height: 450px;
+    object-fit: cover
+}
+
+#vidtext {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+    color: antiquewhite;
+    z-index: 2;
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+}
+
+#vidtext2 {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    text-align: center;
+    color: antiquewhite;
+    z-index: 2;
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+
+}
+
+.buttonmenu {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center;
+    z-index: 2;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 12px 70px;
+    background-color: var(--button-bg);
+    font-family: "Roboto Mono", monospace;
+    cursor: pointer;
+}
+
+.videoscope button:hover {
+    color: rgb(192, 98, 98);
+}
+
+.videoscope .buttonmenu {
+    text-decoration: none;
+    color: var(--button-text);
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: var(--nav-bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 55px;
+
+}
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: var(--nav-bgcolor);
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+    width: 150px;
+    display: inline-block;
+
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    text-align: center;
+
+}
+
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
+
+}
+
+
+
+
+
+.choose-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.choose-us-container img {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.choose-us-container .choosetext {
+    text-align: center;
+    max-width: 400px;
+}
+
+.choosetext {
+    color: var(--button-text);
+    font-size: large;
+
+}
+
+.choosetext p {
+    font-size: 18px;
+    margin: 10px 10px;
+
+}
+
+
+
+
+
+
+.products {
+    padding: 50px 20px;
+    background-color: #F4E7D7;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #5C4033;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 30px 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 30px 30px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    color: #C06262;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #5C4033;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #E8D7C2;
+    color: #5C4033;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #C06262;
+    color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+.offer {
+    background-color: var(--button-bg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    max-width: 700px;
+    height: 300px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.offer:hover {
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.9);
+    transform: scale(1.02);
+}
+
+
+
+.offer img {
+    width: 270px;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 30px;
+
+}
+
+.offer div {
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    margin-right: 70px;
+    font-size: x-large;
+    color: var(--button-text);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+
+}
+
+.offer p {
+    text-transform: capitalize;
+}
+
+
+.offer button {
+    text-align: center;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c7b196;
+    color: #5C4033;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.offer button:hover {
+    color: rgb(192, 98, 98);
+}
+
+.text-offer {
+    font-size: 15px;
+    max-width: 700px;
+}
+
+
+footer .footer-container {
+    color: var(--footer-titles);
+    background-color: var(--nav-bgcolor);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px 30px 0 0;
+    font-weight: bold;
+}
+
+.footertitle {
+    font-size: x-large;
+}
+
+.footer-link {
+    margin: 32px 24px;
+
+}
+
+.footer-link a {
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: var(--nav-text);
+    margin-bottom: 10px;
+}
+
+.footer-address {
+    margin: 32px 20px;
+    text-transform: capitalize;
+}
+
+.footer-address p {
+    max-width: 200px;
+    color: var(--nav-text);
+}
+
+.footer-address a button {
+    text-decoration: none;
+    color: var(--nav-bgcolor);
+
+}
+
+.footer-address button {
+    background-color: var(--nav-text);
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.footer-address button:hover {
+    color: rgb(192, 98, 98);
+}
+
+.footer-contact {
+    margin: 32px 20px;
+    text-transform: capitalize;
+    margin-right: 150px;
+}
+
+.footer-contact ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: var(--nav-text);
+}
+
+.footer-contact img {
+    margin-right: 10px;
+
+}
