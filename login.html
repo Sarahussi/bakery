@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+        <html>
+        <head>
+            <script src="theme.js"></script>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="login.css">
+            <title>Login Page</title>
+        </head>
+        <body>
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="logono.png" alt id="logo">
+                    </div>
+                    <ul class="link">
+                        <li><img src="house-chimney.png" id="iconhouse"><a
+                                href="index.html">HOME</a></li>
+                        <li><img src="apps.png" id="iconmenu"><a
+                                href="menu.html">menu</a></li>
+                        <li> <img src="phone-plus.png" alt id="icophone"><a
+                                href="contact.html">contact us</a></li>
+                        <li><img src="cart-shopping-fast.png" id="iconcart"><a
+                                href="cart.html">cart</a></li>
+                        <li><img src="entrance.png" alt id="iconlog"><a
+                                href="login.html">login</a></li>
+
+                    </ul>
+                    <button id="theme" class="theme"><img src="moon-stars.png"alt>
+                    </button>
+                </nav>
+            </header>
+            <div class="loginform">
+                    <div class="logintitle">
+                        <h1><a href="index.html">Pretty Baked</a></h1>
+                    </div>
+                    <div class="login">
+                        <form id="form">
+                            <h2>Login</h2>
+                            <div id="error-messages"></div>
+                            <div>
+                                <label for="email_input"></label>
+                            <input type="email" name="email" id="email_input"
+                                placeholder="Email"
+                                autocomplete="off"
+                            >
+                            </div>
+                            <div>
+                                <label for="password_input"></label>
+                            <input type="password" id="password_input" name="password"
+                                placeholder="Password"
+                                autocomplete="off">
+                            </div>
+                            <button type="submit" name="submit"
+                                class="loginbutton">Login</button>
+                            <p>Don't have an account? <a
+                                    href="register.html" name="register"
+                                    class="register"
+                                    target="_blank">Register</a></p>
+                        </form>
+                    </div>
+                <footer>
+                    <p>© 2025 <a href="index.html">Pretty Baked</a></p>
+                </footer>
+            </div>
+            <script src="login.js"></script>
+        </body>
+    </html>

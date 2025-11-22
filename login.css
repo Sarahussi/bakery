@@ -1,0 +1,216 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --back : rgb(246, 236, 223);
+    --nav-bgcolor : rgb(244,231,215);
+    --nav-text : rgb(89,15,15);
+    --divcol:rgb(255, 243, 235);
+    --btncol:rgb(160, 82, 45);
+    --btntxt:rgb(255,255,255);
+    --img: url("pic.jpg");
+    --errorclr: #ffe6e6;
+}
+body.dark{
+    --back:#1e1e1e;
+    --nav-bgcolor:#2b2b2b;
+    --nav-text:#f5f5f5;
+    --divcol:#F6F2EC;
+    --btncol:rgb(255,255,255);
+    --btntxt:rgb(0,0,0);
+    --img: url("dark2.jpg");
+    --errorclr: gray;
+}
+body
+{
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.logintitle
+{
+    margin: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-top: 30px;
+    color: var(--nav-text);
+    font-family: Lucida Handwriting;
+}
+.login 
+{
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: auto;
+    padding: 2%;
+    margin-top: 5%;
+    transform: none;
+    border: 1px solid var(--nav-text);
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: var(--nav-text);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 2%;
+}
+h2
+{
+    text-transform: uppercase;
+}
+form input
+{
+    width: 70%;
+    height: 50px;
+    font: inherit;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px;
+    border: 2px solid var(--nav-bgcolor);
+    background-color: var(--nav-bgcolor);
+    transition: 150ms ease;
+}
+form input:hover
+{
+    border-color: var(--nav-text) ;
+}
+form input::placeholder
+{
+    color: var(--nav-text);
+}
+.incorrect input {
+    border-color: red;
+    background-color: var(--errorclr);
+}
+#error-messages {
+    display: block;
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+button[type="submit"]
+{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    width: 30%;
+    padding: 10px;
+    color: var(--btntxt);
+    background-color: var(--nav-text);
+    border: none;
+    border-radius: 1000px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+h2
+{
+    padding-bottom: 10px;
+}
+p{
+    padding-bottom: 10px;
+}
+.register
+{
+    text-decoration: none;
+    color: var(--nav-text);
+    transition: 0.5s;
+    
+}
+.register:hover{
+    color: var(--nav-text);
+    text-decoration: underline;
+    text-decoration-color: var(--nav-text);
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease;
+}
+h1 a
+{
+    text-decoration: none;
+    color: var(--nav-text);
+    font-family: Lucida Handwriting;
+}
+footer
+{
+    text-align: center;
+}
+footer a
+{
+    text-decoration: none;
+    color: var(--nav-text);
+    font-family: Lucida Handwriting;
+}
+footer p 
+{
+    color: var(--nav-text);
+}
+.navbar {
+    background-color: var(--nav-bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 55px;
+    border-bottom: 2px solid var(--nav-text);
+}
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: var(--nav-bgcolor);
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+    width: 150px;
+    display: inline-block;
+
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
+
+}
