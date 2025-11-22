@@ -28,6 +28,7 @@ body
 {
     background-image: var(--img);
     background-size: cover;
+    background-color: #f8e9dc;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -75,13 +76,13 @@ form input
     border-radius: 10px;
     padding: 1rem;
     margin: 10px;
-    border: 2px solid var(--nav-bgcolor);
-    background-color: var(--nav-bgcolor);
+    border: 2px solid black;
+    background-color: white;
     transition: 150ms ease;
 }
 form input:hover
 {
-    border-color: var(--nav-text) ;
+    border: 1px black dotted;
 }
 form input::placeholder
 {
