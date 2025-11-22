@@ -119,7 +119,7 @@ nav button {
 
     list-style: none;
     display: inline-block;
-    margin-right: 70px;
+    margin: auto;
     text-align: center;
 
 }
@@ -394,5 +394,6 @@ footer .footer-container {
 
 .footer-contact img {
     margin-right: 10px;
+
 
 }
