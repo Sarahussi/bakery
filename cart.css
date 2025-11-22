@@ -69,7 +69,7 @@ nav button {
 
   list-style: none;
   display: inline-block;
-  margin-right: 70px;
+  margin: auto;
   text-align: center;
 
 }
@@ -205,3 +205,4 @@ footer {
   margin-top: 40px;
   padding-bottom: 20px;
 }
+
