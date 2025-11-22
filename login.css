@@ -196,7 +196,7 @@ nav button {
 
     list-style: none;
     display: inline-block;
-    margin-right: 70px;
+    margin: auto;
     text-align: center;
 }
 
@@ -215,3 +215,4 @@ nav button {
     margin-right: 5px;
 
 }
+
