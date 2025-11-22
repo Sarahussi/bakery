@@ -64,41 +64,38 @@
             <img src="🥐🌸 (1).jfif" alt="Croissant">
             <h3>Croissant</h3>
             <p>70EGP</p>
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Croissant', 70)" class="add">Add to Cart</button>
         </div>
         <div class="product-card">
             <img src="DÓNUTS DE FERRERO ROCHER - Petit Fit by Cris (1).jfif" alt="Donut">
             <h3>Donut</h3>
             <p>60EGP</p>
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Donut', 60)" class="add">Add to Cart</button>
         </div>
         <div class="product-card">
             <img src="Red Velvet Cinnamon Rolls.jfif" alt="Cinnamon">
             <h3>Cinnamon</h3>
-            <p>100E</p>
-            <button>Add to Cart</button>
+            <p>100EGP</p>
+            <button onclick="addToCart('Cinnamon', 100)" class="add">Add to Cart</button>
         </div>
 
         <div class="product-card">
             <img src="b695c8ab-4f77-492e-b165-079a413c6635.jfif" alt="Danish">
             <h3>Danish</h3>
-            <p>90E</p>
-            <button>Add to Cart</button>
+            <p>90EGP</p>
+            <button onclick="addToCart('Danish', 90)" class="add">Add to Cart</button>
         </div>
 
         <div class="product-card">
             <img src="Biscoff Cookie Butter White Chocolate Chip Cookies - House of Nash Eats (1).jfif" alt="Cookies">
             <h3>Cookies</h3>
-            <p>120E</p>
-            <button>Add to Cart</button>
+            <p>120EGP</p>
+            <button onclick="addToCart('Cookies', 120)" class="add">Add to Cart</button>
         </div>
         
       
     </div>
 </section>
-
-
-    
 
     <section class="offer">
         <div>
@@ -106,7 +103,7 @@
             <h3>limited time offer!!</h3>
             <p class="text-offer">Enjoy our crispy pistachio croissants with a creamy pistachio latte </p>
             <p>only <strong>100</strong> instead of <del>200</del></p>
-            <button id="add-offer" onclick="addToCart(this,'crispy pistachio croissants + creamy pistachio latte',100)"
+            <button id="add-offer" onclick="addToCart('crispy pistachio croissants + creamy pistachio latte',100)"
                 class="add"> add
                 offer</button>
 
@@ -148,7 +145,5 @@
 
     </footer>
     <script src="cart.js"></script>
-    <script src="index.js"></script>
 </body>
-
 </html>
