@@ -1,10 +1,7 @@
-loadTheme();
-const themebutton = document.getElementById('theme');
-themebutton.addEventListener('click', theme);
-
 const form = document.getElementById('form'); 
 const email_input = document.getElementById('email_input');
 const password_input = document.getElementById('password_input');
+const emailInput = document.getElementById('email_input');
 
 form.addEventListener('submit', (e) => {
   
@@ -19,9 +16,17 @@ form.addEventListener('submit', (e) => {
     errors = getLoginFormErrors(email_input.value, password_input.value);
   }
 
+  e.preventDefault();
   if (errors.length > 0) {
-    e.preventDefault();
     displayErrors(errors);
+  }else{
+    if(emailInput.value === "admin_account@example.com"){
+        window.location.href = "adminIndex.html";
+    }else if(emailInput.value === "vendor_account@example.com"){
+        window.location.href = "vendorIndex.html";
+    }else{
+        window.location.href = "index.html";
+    }
   }
 });
 
@@ -62,9 +67,6 @@ function displayErrors(errors) {
     errorContainer.appendChild(errorElement);
   });
 }
-
-const emailInput = document.getElementById('email_input');
-const passwordInput = document.getElementById('password_input');
 
 emailInput.addEventListener('input', () => {
     emailInput.style.color = 'var(--nav-text)'; 
