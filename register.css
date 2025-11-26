@@ -115,18 +115,18 @@ a{
     color: rgb(160, 82, 45);
     text-decoration: none;
 }
-form input {
+form input, form select {
 
     display: block;
     width: 90%;
-    margin: 12px 0;
+    margin: 12px auto;
     padding: 12px;
     border: 2px solid rgb(210, 180, 140);
     border-radius: 10px;
     background-color: white;
     font-size: 15px;
+    box-sizing: border-box;
 }
-
 form button {
     margin-top: 20px;
     margin-left: auto;
