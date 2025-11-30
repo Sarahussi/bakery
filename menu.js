@@ -2,27 +2,27 @@ const defaultProducts = [
     {
         name: "Croissant",
         price: 70,
-        image: "croissant.jpg"
+        image: "🥐🌸 (1).jfif"
     },
     {
         name: "Donut",
         price: 60,
-        image: "donut.jpg"
+        image: "DÓNUTS DE FERRERO ROCHER - Petit Fit by Cris (1).jfif"
     },
     {
         name: "Cinnamon",
         price: 100,
-        image: "cinnamon.jpg"
+        image: "Red Velvet Cinnamon Rolls.jfif"
     },
     {
         name: "Danish",
         price: 90,
-        image: "danish.jpg"
+        image: "b695c8ab-4f77-492e-b165-079a413c6635.jfif"
     },
     {
         name: "Cookies",
         price: 120,
-        image: "cookies.jpg"
+        image: "Biscoff Cookie Butter White Chocolate Chip Cookies - House of Nash Eats (1).jfif"
     }
 ];
 function getAllProducts() {
@@ -45,3 +45,4 @@ function loadMenu() {
     });
 }
 loadMenu();
+
