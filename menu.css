@@ -1,0 +1,176 @@
+/* --------------------------
+   THEME VARIABLES
+---------------------------*/
+:root {
+    --backg-color: rgb(246, 236, 223);
+    --nav-bgcolor: rgb(244, 231, 215);
+    --button-bg: #E8D7C2;
+    --button-text: #5C4033;
+    --nav-text: rgb(89, 15, 15);
+    --footer-titles: black;
+}
+
+body.dark {
+    --backg-color: #1e1e1e;
+    --nav-bgcolor: #2b2b2b;
+    --button-bg: rgba(64, 58, 48, 0.9);
+    --button-text: #ffffff;
+    --nav-text: #f5f5f5;
+    --footer-titles: #E8D7C2;
+}
+
+/* --------------------------
+   GENERAL
+---------------------------*/
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--backg-color);
+    color: #4d2c20;
+}
+
+h1 {
+    font-family: 'Lucida Handwriting';
+    font-size: 32px;
+    color: #9C4E2D;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --------------------------
+   NAVBAR (matches cart)
+---------------------------*/
+.navbar {
+    background-color: var(--nav-bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 55px;
+}
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar .link li {
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+}
+
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--nav-bgcolor);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* --------------------------
+   MENU GRID
+---------------------------*/
+.menu-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* --------------------------
+   MENU CARD (matching cart card)
+---------------------------*/
+.menu-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    background-color: #fff8f2;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    color: #9C4E2D;
+    font-family: 'Lucida Handwriting';
+}
+
+.menu-item .price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* --------------------------
+   BUTTONS
+---------------------------*/
+.menu-item button {
+    padding: 10px 15px;
+    background-color: #9C4E2D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: #7c3e24;
+}
+
+/* --------------------------
+   FOOTER
+---------------------------*/
+footer {
+    font-family: 'Lucida Handwriting';
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--nav-text);
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--nav-text);
+    font-family: Lucida Handwriting;
+}
