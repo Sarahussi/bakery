@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
     displayErrors(errors);
   }else{
     if(emailInput.value === "admin_account@example.com"){
-        window.location.href = "adminIndex.html";
+        window.location.href = "admin.html";
     }else if(emailInput.value === "vendor_account@example.com"){
         window.location.href = "vendorIndex.html";
     }else{
@@ -75,3 +75,4 @@ emailInput.addEventListener('input', () => {
 passwordInput.addEventListener('input', () => {
     passwordInput.style.color = 'var(--nav-text)'; 
 });
+
