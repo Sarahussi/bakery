@@ -3,220 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Bakery</title>
+    <title>Admin Requests - Bakery</title>
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 
-    
-    <header>
+
+<header>
     <nav class="navbar">
         <div class="logo">
-          <img src="logono.png" alt="" id="logo" />
+            <img src="logono.png" alt="" id="logo">
         </div>
         <ul class="link">
-          <li>
-            <img src="house-chimney.png" id="iconhouse" /><a href="index.html">HOME</a>
-          </li>
-          <li>
-            <img src="cart-shopping-fast.png" id="iconcart" /><a href="cart.html">cart</a>
-          </li>
-          <li>
-            <img src="entrance.png" alt="" id="iconlog" /><a href="index.html">Logout</a>
-          </li>
+            <li><img src="house-chimney.png" id="iconhouse"><a href="index.html">HOME</a></li>
+            <li><img src="cart-shopping-fast.png" id="iconcart"><a href="cart.html">cart</a></li>
+            <li><img src="entrance.png" alt="" id="iconlog"><a href="index.html">Logout</a></li>
         </ul>
     </nav>
-    </header>
-
-    
-    <div class="dashboard-header">
-        <h1>Admin Dashboard – Bakery</h1>
-        <p>Welcome to the admin panel. Manage products and categories easily!</p>
-    </div>
-
-    
-    <div class="stats-container">
-        <div class="stat-box">
-            <h3 id="total-products">12</h3>
-            <p>Total Products</p>
-        </div>
-        <div class="stat-box">
-            <h3 id="total-categories">4</h3>
-            <p>Total Categories</p>
-        </div>
-    </div>
+</header>
 
 
-    <div class="main-container">
+<div class="dashboard-header">
+    <h1>Admin – Requests</h1>
+    <p>Here you can approve or reject new registration requests.</p>
+</div>
+
+
+<div class="table-container">
+    <h2>Registration Requests</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Account Type</th>
+            <th>Action</th>
+        </tr>
         
-        <div class="table-container">
-            <h2>Products</h2>
-            <table>
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td>Chicken Croissant</td><td>250 EGP</td><td>Savory</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Zaatar Pie (1/4)k</td><td>55 EGP</td><td>Savory</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Cheese Stuffed Croissant</td><td>80 EGP</td><td>Savory</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Cinnamon Roll</td><td>100 EGP</td><td>Pastry</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Croissant</td><td>70 EGP</td><td>Pastry</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Brownie</td><td>80 EGP</td><td>Pastry</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Donut</td><td>60 EGP</td><td>Pastry</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                     <td>Whole Wheate Bread</td><td>60 EGP</td><td>Bread</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Baguette</td><td>50 EGP</td><td>Bread</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Coffee</td><td>20 EGP</td><td>Drink</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-            
-                    <td>Cappuccino</td><td>30 EGP</td><td>Drink</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Chocolate Milkshake</td><td>65 EGP</td><td>Drink</td>
-                    <td><button class="btn edit-btn">Edit</button> <button class="btn delete-btn">Delete</button></td>
-                </tr>
-            </table>
-        </div>
-
         
-        <div class="add-product-box">
-            <h3>Add New Product</h3>
-            <form>
-                <label for="name">Product Name:</label>
-                <input type="text" id="name" placeholder="Enter product name">
+    </table>
+</div>
 
-                <label for="price">Price:</label>
-                <input type="text" id="price" placeholder="Enter price">
-
-                <label for="category">Category:</label>
-                <select id="category">
-                    <option value="Savory">Savory</option>
-                    <option value="Pastry">Pastry</option>
-                    <option value="Bread">Bread</option>
-                    <option value="Drink">Drink</option>
-                </select>
-
-                <label for="image">Image URL:</label>
-                <input type="text" id="image" placeholder="Enter image URL">
-
-                <button type="submit" class="btn">Add Product</button>
-            </form>
-        </div>
-    </div>
-
-<script>
-    const form = document.querySelector('.add-product-box form');
-    const table = document.querySelector('table');
-    const totalProductsBox = document.getElementById('total-products');
-
-   
-    function updateProductCount() {
-        const rows = table.querySelectorAll('tr').length - 1; 
-        totalProductsBox.textContent = rows;
-    }
-
-
-    function addRowFunctions(row) {
-        const deleteBtn = row.querySelector('.delete-btn');
-        const editBtn = row.querySelector('.edit-btn');
-
-        deleteBtn.addEventListener('click', () => {
-            row.remove();
-            updateProductCount();
-        });
-
-        editBtn.addEventListener('click', () => {
-            // جلب القيم الحالية
-            const name = row.children[0].textContent;
-            const price = row.children[1].textContent.replace(' EGP','');
-            const category = row.children[2].textContent;
-
-             
-            document.getElementById('name').value = name;
-            document.getElementById('price').value = price;
-            document.getElementById('category').value = category;
-
-           
-            row.remove();
-            updateProductCount();
-        });
-    }
-
-    
-    const existingRows = table.querySelectorAll('tr:not(:first-child)');
-    existingRows.forEach(row => {
-        addRowFunctions(row);
-    });
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const price = document.getElementById('price').value;
-        const category = document.getElementById('category').value;
-
-        if(name === '' || price === '') {
-            alert('Please enter product name and price!');
-            return;
-        }
-
-        const newRow = document.createElement('tr');
-        newRow.innerHTML = `
-            <td>${name}</td>
-            <td>${price} EGP</td>
-            <td>${category}</td>
-            <td>
-                <button class="btn edit-btn">Edit</button>
-                <button class="btn delete-btn">Delete</button>
-            </td>
-        `;
-
-        table.appendChild(newRow);
-
-       
-        addRowFunctions(newRow);
-
-      
-        form.reset();
-
-      
-        updateProductCount();
-    });
-</script>
-
-
-
+<script src="admin.js"></script>
 </body>
 </html>
