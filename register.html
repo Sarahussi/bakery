@@ -46,13 +46,13 @@
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
   <script>
-document.getElementById("registerForm").addEventListener("submit", function(e){
+document.querySelector("form").addEventListener("submit", function(e){
     e.preventDefault();
 
-    const first = document.querySelector('input[placeholder="First Name"]').value.trim();
-    const last = document.querySelector('input[placeholder="Last Name"]').value.trim();
+    const first = document.querySelector('input[placeholder="First Name"]').value;
+    const last = document.querySelector('input[placeholder="Last Name"]').value;
     const role = document.getElementById("Role_DropBox").value;
-    const email = document.querySelector('input[type="email"]').value.trim();
+    const email = document.querySelector('input[type="email"]').value;
     const pass = document.querySelector('input[type="password"]').value;
 
     if(role === ""){
@@ -60,10 +60,9 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
         return;
     }
 
-   
+    // ---- Save request in LocalStorage ----
     let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
 
-   
     requests.push({
         firstName: first,
         lastName: last,
@@ -72,18 +71,18 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
         role: role
     });
 
-
     localStorage.setItem("registerRequests", JSON.stringify(requests));
 
+    // ---- Show success alert ----
     alert("Your account request has been sent to admin!");
 
-
-    setTimeout(() => {
-        window.location.href = "login.html";
-    }, 300); 
+    // ---- Redirect بعد ما المستخدم يغلق الرسالة ----
+    window.location.href = "./login.html"; // اضيف "./" عشان يضمن المسار صحيح على GitHub
 });
 </script>
+
   </body>
 </html>
+
 
 
