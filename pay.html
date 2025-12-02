@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Methods</title>
+<link rel="stylesheet" href="pay.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+          <div class="logo">
+            <img src="logono.png" alt id="logo" />
+          </div>
+          <ul class="link">
+            <li>
+              <img src="house-chimney.png" id="iconhouse" /><a href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <img src="cart-shopping-fast.png" id="iconcart" /><a
+                href="cart.html"
+                >cart</a
+              >
+            </li>
+            <li>
+              <img src="entrance.png" alt id="iconlog" /><a href="login.html"
+                >login</a
+              >
+            </li>
+          </ul>
+          <button id="theme" class="theme">
+            <img src="moon-stars.png" alt />
+          </button>
+        </nav>
+    </header>
+
+
+<div class="container">
+    <h2>Select Payment Method</h2>
+
+    <div class="options">
+        
+        
+        <div class="option" onclick="selectCash()">
+            <img src="https://cdn-icons-png.flaticon.com/512/2331/2331941.png" alt="Cash">
+            <span>Cash on Delivery</span>
+        </div>
+
+       
+        <div class="option" onclick="showCreditForm()">
+            <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Card">
+            <span>Credit Card</span>
+        </div>
+
+    </div>
+
+    
+    <div id="creditForm">
+        <h3 style="color:#6b4f33;">Enter Card Details</h3>
+
+        <label>Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456">
+
+        <label>Expiration Date</label>
+        <input type="text" placeholder="MM/YY">
+
+        <label>CVV</label>
+        <input type="text" placeholder="123">
+
+        <button onclick="payNow()">Pay Now</button>
+
+    </div>
+
+</div>
+
+<script>
+    function selectCash() {
+        alert("You chose Cash on Delivery");
+        localStorage.removeItem("cart");
+        window.location.href = "index.html";
+    }
+    function payNow() {
+    alert("Payment successful");
+    localStorage.removeItem("cart"); 
+    window.location.href = "index.html"; 
+}
+
+    function showCreditForm() {
+        document.getElementById("creditForm").style.display = "block";
+    }
+</script>
+
+</body>
+</html>

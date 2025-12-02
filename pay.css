@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(246, 236, 223);
+}
+
+.navbar {
+    background-color: var(--nav-bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 55px;
+
+}
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: var(--nav-bgcolor);
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+    width: 150px;
+    display: inline-block;
+
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+
+}
+
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
+
+}
+
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-top: 7px solid #9C4E2D;
+}
+
+h2 {
+    text-align: center;
+    color: #6b4f33;
+    margin-bottom: 25px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.option {
+    flex: 1;
+    background: #fdf8f3;
+    padding: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 3px solid #9C4E2D;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+
+.option:hover {
+    background: #f3e9e0;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.15);
+}
+
+.option img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.option span {
+    font-size: 20px;
+    color: #4a3826;
+    font-weight: 600;
+}
+
+
+#creditForm {
+    margin-top: 30px;
+    background: #fdf8f3;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #9C4E2D;
+    display: none;
+}
+
+#creditForm label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #4a3826;
+}
+
+#creditForm input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #9C4E2D;
+}
+
+#creditForm button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background: #9C4E2D;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#creditForm button:hover {
+    background: #7b5e3d;
+}
