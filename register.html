@@ -45,14 +45,14 @@
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
-     <script>
-document.querySelector("form").addEventListener("submit", function(e){
+  <script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
     e.preventDefault();
 
-    const first = document.querySelector('input[placeholder="First Name"]').value;
-    const last = document.querySelector('input[placeholder="Last Name"]').value;
+    const first = document.querySelector('input[placeholder="First Name"]').value.trim();
+    const last = document.querySelector('input[placeholder="Last Name"]').value.trim();
     const role = document.getElementById("Role_DropBox").value;
-    const email = document.querySelector('input[type="email"]').value;
+    const email = document.querySelector('input[type="email"]').value.trim();
     const pass = document.querySelector('input[type="password"]').value;
 
     if(role === ""){
@@ -60,9 +60,10 @@ document.querySelector("form").addEventListener("submit", function(e){
         return;
     }
 
-    // ---- Save request in LocalStorage ----
+   
     let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
 
+   
     requests.push({
         firstName: first,
         lastName: last,
@@ -71,15 +72,18 @@ document.querySelector("form").addEventListener("submit", function(e){
         role: role
     });
 
+
     localStorage.setItem("registerRequests", JSON.stringify(requests));
 
-    // ---- Show success alert ----
     alert("Your account request has been sent to admin!");
 
-    // ---- Redirect after saving ----
-    window.location.href = "login.html";
+
+    setTimeout(() => {
+        window.location.href = "login.html";
+    }, 300); 
 });
 </script>
   </body>
 </html>
+
 
