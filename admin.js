@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadRequests() {
         let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
 
-        // Clear previous rows except header
+    
         table.innerHTML = `
             <tr>
                 <th>Name</th>
@@ -35,9 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     loadRequests();
 
-    // ==========================
-    // Approve / Reject Actions
-    // ==========================
+
 
     document.addEventListener("click", function(e) {
         let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
@@ -47,12 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let acceptedUser = requests[index];
 
-            // Save approved user into users list
+            
             let users = JSON.parse(localStorage.getItem("approvedUsers")) || [];
             users.push(acceptedUser);
             localStorage.setItem("approvedUsers", JSON.stringify(users));
 
-            // remove from pending requests
+           
             requests.splice(index, 1);
             localStorage.setItem("registerRequests", JSON.stringify(requests));
 
@@ -72,4 +70,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
 
