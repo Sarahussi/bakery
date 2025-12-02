@@ -11,7 +11,7 @@ body{
 
 
 .navbar {
-    background-color: #ecb895;
+    background-color: rgb(247, 236, 222);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,9 +95,9 @@ nav button {
     width:60%;
     margin:20px auto;
     overflow-x:auto;
-    background:white;
+    background: rgb(255, 255, 255); 
     padding:20px;
-    border-radius:10px;
+    border-radius:12px; 
     box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -113,14 +113,150 @@ table th, table td{
 }
 
 table th{
-    background:#d9a07b;
+    background:#9C4E2D;
     color:white;
 }
 
 .btn{
     padding:5px 10px;
     border:none;
-    background:#d9a07b;
+    background:#9C4E2D;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:14px;
+    margin-right:5px;
+}
+
+.btn:hover{
+    background:#b47b55;
+}
+
+h2{
+    margin-bottom: 10px;
+}*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f8f3ef;
+}
+
+
+.navbar {
+    background-color: rgb(247, 236, 222);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    height: 55px;
+
+}
+
+nav button {
+    margin-right: 30px;
+    border-radius: 10px 10px;
+    border: none;
+    background-color: #f8e9dc;
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.navbar .logo img {
+    width: 150px;
+    display: inline-block;
+
+}
+
+.navbar .link {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+
+.navbar .link li {
+
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+
+}
+
+.link li a {
+    text-decoration: none;
+    color: var(--nav-text);
+
+}
+
+.link li a:hover {
+    color: rgb(192, 98, 98);
+
+}
+
+.link li img {
+    width: 15px;
+    margin-right: 5px;
+
+}
+
+
+.dashboard-header{
+    background:white;
+    padding:20px;
+    margin:20px auto;
+    width:90%;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.dashboard-header h1{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.dashboard-header p{
+    color:#666;
+}
+
+
+.table-container{
+    width:60%;
+    margin:20px auto;
+    overflow-x:auto;
+    background: rgb(255, 255, 255); 
+    padding:20px;
+    border-radius:12px; 
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th, table td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+table th{
+    background:#9C4E2D;
+    color:white;
+}
+
+.btn{
+    padding:5px 10px;
+    border:none;
+    background:#9C4E2D;
     color:white;
     border-radius:5px;
     cursor:pointer;
