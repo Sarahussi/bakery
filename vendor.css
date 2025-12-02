@@ -1,0 +1,168 @@
+/* --------------------------
+   THEME VARIABLES
+---------------------------*/
+:root {
+    --backg-color: rgb(246, 236, 223);
+    --nav-bgcolor: rgb(244, 231, 215);
+    --button-bg: #E8D7C2;
+    --button-text: #5C4033;
+    --nav-text: rgb(89, 15, 15);
+    --footer-titles: black;
+}
+
+body.dark {
+    --backg-color: #1e1e1e;
+    --nav-bgcolor: #2b2b2b;
+    --button-bg: rgba(64, 58, 48, 0.9);
+    --button-text: #ffffff;
+    --nav-text: #f5f5f5;
+    --footer-titles: #E8D7C2;
+}
+
+/* --------------------------
+   GENERAL
+---------------------------*/
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--backg-color);
+    font-family: 'Open Sans', sans-serif;
+    color: #4d2c20;
+}
+
+/* --------------------------
+   HEADERS
+---------------------------*/
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lucida Handwriting';
+    font-size: 36px;
+    color: #9C4E2D;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    color: #9C4E2D;
+    font-family: 'Lucida Handwriting';
+}
+
+.example_text{
+    text-align: center;
+}
+
+/* --------------------------
+   PRODUCT FORM
+---------------------------*/
+form {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
+}
+
+form:hover {
+    transform: translateY(-5px) scale(1.02);
+    background-color: #fff7ef;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.45);
+}
+form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #d8b897;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #9C4E2D;
+}
+
+form button {
+    padding: 12px;
+    background-color: #9C4E2D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 35%;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #7c3e24;
+}
+
+/* --------------------------
+   PRODUCT LIST GRID
+---------------------------*/
+#productList {
+    width: 85%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+/* --------------------------
+   PRODUCT CARD (matches cart)
+---------------------------*/
+.productItem {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px black;
+    transition: 0.25s ease;
+}
+
+.productItem:hover {
+    transform: translateY(-7px) scale(1.03);
+    background-color: #fff8f2;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+}
+
+.productItem h3 {
+    font-family: 'Lucida Handwriting';
+    font-size: 20px;
+    color: #9C4E2D;
+}
+
+.productItem p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* --------------------------
+   DELETE BUTTON
+---------------------------*/
+.productItem button {
+    padding: 10px 15px;
+    background-color: #9C4E2D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.productItem button:hover {
+    background-color: #7c3e24;
+    transform: scale(1.07);
+}
