@@ -45,7 +45,7 @@
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
-  <script>
+<script>
 document.querySelector("form").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -55,11 +55,19 @@ document.querySelector("form").addEventListener("submit", function(e){
     const email = document.querySelector('input[type="email"]').value;
     const pass = document.querySelector('input[type="password"]').value;
 
-    if(role === ""){
+    if(role === "") {
         alert("Please select a role!");
         return;
     }
 
+  
+    if(role === "Customer_Option") {
+        alert("Welcome Customer! Redirecting to Home...");
+        window.location.href = "./index.html";
+        return;  
+    }
+
+    
     let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
 
     requests.push({
@@ -73,14 +81,16 @@ document.querySelector("form").addEventListener("submit", function(e){
     localStorage.setItem("registerRequests", JSON.stringify(requests));
 
     alert("Your account request has been sent to admin!");
-
-
     window.location.href = "./login.html";
 });
 </script>
 
+    
+  
+
   </body>
 </html>
+
 
 
 
