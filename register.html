@@ -60,7 +60,6 @@ document.querySelector("form").addEventListener("submit", function(e){
         return;
     }
 
-    // ---- Save request in LocalStorage ----
     let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
 
     requests.push({
@@ -73,16 +72,16 @@ document.querySelector("form").addEventListener("submit", function(e){
 
     localStorage.setItem("registerRequests", JSON.stringify(requests));
 
-    // ---- Show success alert ----
     alert("Your account request has been sent to admin!");
 
-    // ---- Redirect بعد ما المستخدم يغلق الرسالة ----
-    window.location.href = "./login.html"; // اضيف "./" عشان يضمن المسار صحيح على GitHub
+
+    window.location.href = "./login.html";
 });
 </script>
 
   </body>
 </html>
+
 
 
 
