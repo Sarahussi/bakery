@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // ==========================
-    // Load registration requests
-    // ==========================
 
     let table = document.querySelector("table");
 
@@ -75,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
