@@ -45,10 +45,41 @@
     <footer>
       <p>© 2025 <a href="index.html">Pretty Baked</a></p>
     </footer>
-    <script>
-        loadTheme();
-        const themebutton = document.getElementById('theme');
-        themebutton.addEventListener('click', theme);
-    </script> 
+     <script>
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const first = document.querySelector('input[placeholder="First Name"]').value;
+    const last = document.querySelector('input[placeholder="Last Name"]').value;
+    const role = document.getElementById("Role_DropBox").value;
+    const email = document.querySelector('input[type="email"]').value;
+    const pass = document.querySelector('input[type="password"]').value;
+
+    if(role === ""){
+        alert("Please select a role!");
+        return;
+    }
+
+    // ---- Save request in LocalStorage ----
+    let requests = JSON.parse(localStorage.getItem("registerRequests")) || [];
+
+    requests.push({
+        firstName: first,
+        lastName: last,
+        email: email,
+        password: pass,
+        role: role
+    });
+
+    localStorage.setItem("registerRequests", JSON.stringify(requests));
+
+    // ---- Show success alert ----
+    alert("Your account request has been sent to admin!");
+
+    // ---- Redirect after saving ----
+    window.location.href = "login.html";
+});
+</script>
   </body>
 </html>
+
